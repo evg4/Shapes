@@ -100,14 +100,33 @@ p {
 }
 
 @media only screen and (max-width: 530px) {
+  p {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
   #rect-1 {
-    width: 200px;
+    width: 50px;
     height: 100px;
   }
 
   #rect-2 {
+    width: 80px;
+    height: 50px;
+  }
+
+  #rect-3 {
+    width: 100px;
+    height: 30px;
+  }
+
+  #rect-4 {
     width: 300px;
-    height: 170px;
+    height: 50px;
   }
 
   header {
