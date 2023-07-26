@@ -13,6 +13,28 @@ p {
   margin: 10px;
 }
 
+button {
+  font-size: 1.5em;
+  color: black;
+  background-color: rgb(234, 234, 234);
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(204, 204, 204);
+}
+
+button:active {
+  opacity: 50%;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
 #all {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +48,7 @@ p {
   height: 200px;
   background-color: blue;
   margin: 10px;
+  opacity: 70%;
 }
 
 #sq-2 {
@@ -33,6 +56,7 @@ p {
   height: 300px;
   background-color: red;
   margin: 10px;
+  opacity: 70%;
 }
 
 #sq-3 {
@@ -40,6 +64,7 @@ p {
   height: 350px;
   background-color: yellow;
   margin: 10px;
+  opacity: 70%;
 }
 
 #sq-4 {
@@ -47,8 +72,28 @@ p {
   height: 150px;
   background-color: greenyellow;
   margin: 10px;
+  opacity: 70%;
 }
 
-button {
-  font-size: 1.5em;
+@media only screen and (max-width: 580px) {
+  h1 {
+    color: red;
+  }
+
+  #sq-2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #sq-3 {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
