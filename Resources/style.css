@@ -1,0 +1,321 @@
+@keyframes turn {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(2) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+h1,
+p {
+  margin: 10px;
+  color: antiquewhite;
+}
+
+button {
+  margin: 10px;
+  font-size: 1.5em;
+  color: rgba(99, 207, 235, 0.829);
+  background-color: white;
+  border: 2px solid rgba(99, 207, 235, 0.829);
+  border-radius: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(99, 207, 235, 0.829);
+  color: white;
+  border-color: white;
+}
+
+button:active {
+  opacity: 50%;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+}
+
+#all-rect {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#rect-1 {
+  width: 140px;
+  height: 240px;
+  background-color: blue;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#rect-2 {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#rect-3 {
+  width: 75px;
+  height: 150px;
+  background-color: yellow;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#rect-4 {
+  width: 150px;
+  height: 75px;
+  background-color: greenyellow;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#all-sq {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#sq-1 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#sq-2 {
+  width: 300px;
+  height: 300px;
+  background-color: darkgreen;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#sq-3 {
+  width: 350px;
+  height: 350px;
+  background-color: magenta;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#sq-4 {
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  margin: 10px;
+  opacity: 70%;
+  border: 2px solid white;
+}
+
+#surprise-button {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin: 40px auto;
+  font-size: 1.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 3px solid rgba(99, 207, 235, 0.829);
+  border-radius: 3px;
+  color: rgba(99, 207, 235, 0.829);
+  background-color: white;
+  z-index: 1;
+  position: relative;
+  animation-name: turn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: playing;
+}
+
+#surprise-button:hover {
+  cursor: pointer;
+  background-color: rgba(99, 207, 235, 0.829);
+  color: white;
+  border-color: white;
+  animation-name: turn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: paused;
+}
+
+#surprise-button:active {
+  opacity: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#stars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  opacity: 70%;
+  display: block;
+  margin: 80px auto;
+  transition: all 4s;
+}
+
+#star1 {
+  width: 33%;
+  height: auto;
+}
+
+#star2 {
+  width: 33%;
+  transform: rotate(45deg);
+}
+
+#star3 {
+  width: 33%;
+}
+
+img:hover,
+#star2:hover {
+  transform: scale(2) rotate(360deg);
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+/*@media only screen and (max-width: 800px) {
+  #rect-1 {
+    width: 200px;
+    height: 400px;
+  }
+
+  #rect-2 {
+    width: 380px;
+    height: 170px;
+  }
+}*/
+
+/*@media only screen and (max-width: 660px) {
+  #rect-1 {
+    width: 200px;
+    height: 300px;
+  }
+
+  #rect-2 {
+    width: 330px;
+    height: 170px;
+  }
+}*/
+
+@media only screen and (max-width: 580px) {
+  #sq-2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  #sq-3 {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  p {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  #surprise-button {
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 40px auto;
+    font-size: 1em;
+  }
+
+  #rect-1 {
+    width: 50px;
+    height: 100px;
+  }
+
+  #rect-2 {
+    width: 80px;
+    height: 50px;
+  }
+
+  #rect-3 {
+    width: 100px;
+    height: 30px;
+  }
+
+  #rect-4 {
+    width: 300px;
+    height: 50px;
+  }
+
+  #sq-1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  #sq-2 {
+    width: 70px;
+    height: 70px;
+  }
+  #sq-3 {
+    width: 30px;
+    height: 30px;
+  }
+
+  #sq-4 {
+    width: 55px;
+    height: 55px;
+  }
+}

@@ -1,4 +1,4 @@
-import { rotate, changeColour } from "../Modules/functions.js";
+import { rotate, changeColour } from "./Modules/dom-functions.js";
 const sq1 = document.getElementById("sq-1");
 const sq2 = document.getElementById("sq-2");
 const sq3 = document.getElementById("sq-3");
